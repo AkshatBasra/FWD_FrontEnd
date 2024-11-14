@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffecd2, #fcb69f); /* Gradient background */
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+            100% { background: linear-gradient(to right, #fcb69f, #ffecd2); }
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #87CEFA;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #FF5733;
+            position: relative;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #FF5733; /* Different color for the header text */
+            animation: textAnimation 5s infinite alternate;
+        }
+        @keyframes textAnimation {
+            0% { color: #FF5733; }
+            100% { color: #87CEFA; }
+        }
+        .moving-text {
+            position: absolute;
+            width: 100%;
+            bottom: -20px;
+            left: 0;
+            text-align: center;
+            font-size: 1.2em;
+            color: #FF5733;
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .restaurant {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background-color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        .restaurant img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .restaurant:hover {
+            transform: scale(1.05);
+            background-color: #ffebcd; /* Light golden background on hover */
+        }
+        .restaurant div {
+            color: #333; /* Text color */
+        }
+        .restaurant a {
+            color: #FF5733; /* Link color */
+            text-decoration: none;
+        }
+        .restaurant a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Savour the Tastes</h2>
+            
+        </div>
+    </header>
+    <div class="container">
+        <div class="restaurant">
+            <img src="Vidyarthi Bhavan.jpg" alt="Vidyarthi Bhavan">
+            <div>
+                <strong>Vidyarthi Bhavan</strong><br>
+                A legendary spot in Bengaluru, famous for its crispy dosas and rich cultural heritage.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Vidyarthi+Bhavan,+32,+Gandhi+Bazaar+Main+Rd,+Gandhi+Bazaar,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.9440525,77.5665865,17z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15f2e88ad035:0xed7fede7791f8edc!2m2!1d77.5713043!2d12.9451241?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a><br>
+		</div>
+        </div>
+        <div class="restaurant">
+            <img src="mtr.jpg" alt="MTR (Mavalli Tiffin Room)">
+            <div>
+                <strong>MTR (Mavalli Tiffin Room)</strong><br>
+                Renowned for its traditional South Indian meals, MTR is a must-visit for authentic flavors.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/MTR,+14,+Lal+Bagh+Main+Rd,+Doddamavalli,+Sudhama+Nagar,+Bengaluru,+Karnataka+560027/@12.9486182,77.5659126,15z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15dda4a3a569:0xde94c3a7899fc902!2m2!1d77.5855569!2d12.9551821!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="slv.jpg" alt="SLV Corner">
+            <div>
+                <strong>SLV Corner</strong><br>
+                A popular spot for quick bites and delicious South Indian snacks.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/SLV+CORNER+VEG+RESTAURANT,+No.+42,+Ramakrishna+Ashram+Circle,+Vanvilas+Road,+Basavanagudi,+Vanivilas+Road,+Bengaluru,+Karnataka+560004/@12.9449732,77.5626098,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15edf6b63d4b:0x5067dcb59168eb51!2m2!1d77.5686634!2d12.9483494!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="cb.jpg" alt="California Burrito">
+            <div>
+                <strong>California Burrito</strong><br>
+                Offering a taste of Mexico with fresh and flavorful burritos and bowls.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/California+Burrito+Mexican+Grill+@+Gandhi+Bazaar,+Gandhi+Bazaar+Main+Rd,+next+to+McDonalds,+Gandhi+Bazaar,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.9448888,77.5629246,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae158f4620a325:0xb58442127b9b4f9e!2m2!1d77.569339!2d12.9471051!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+
+        <div class="restaurant">
+            <img src="gv.jpg" alt="The Grand Village">
+            <div>
+                <strong>The Grand Village</strong><br>
+                a restaurant in Bengaluru, India that serves a variety of cuisines, including vegetarian, vegan, North Indian, South Indian, and Rajasthani:<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Grand+Village,+3rd+Floor,+Gandhi+Bazaar+Main+Rd,+Above+Reliance+Trends,+Gandhi+Bazaar,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.9435106,77.5669308,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15f2bf3c9f87:0x253a945376ff1e00!2m2!1d77.5720383!2d12.9445824!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+<div class="restaurant">
+            <img src="ad.jpg" alt="Apna Dhaba">
+            <div>
+                <strong>Apna Dhaba</strong><br>
+                A North Indian restaurant in Basavanagudi, Bangalore that's known for its fast delivery, healthy food, and tasty presentation.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Apna+Dhaba+%7C+Taste+Of+Punjab+Pure+Veg,+Mount+Joy+Extension,+Hanumanthnagar,+Banashankari+1st+Stage,+Banashankari,+Bengaluru,+Karnataka+560019/@12.941313,77.5634912,17z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15ba1deb6697:0x5449322bb3265a46!2m2!1d77.5644487!2d12.9403745!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+<div class="restaurant">
+            <img src="Dominoes.jpg" alt="Domino's">
+            <div>
+                <strong>Domino's</strong><br>
+                A global pizza chain that offers pizza delivery, carryout, and dine-in services.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Domino's+Pizza,+38,+Ground+Floor,+Bull+Temple+Rd,+near+Karur+Vysya+bank,+Gandhi+Bazaar,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.9448888,77.5623401,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae3e2dfabdebe9:0xce8916fd357f1a9d!2m2!1d77.5679879!2d12.9451936!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+<div class="restaurant">
+            <img src="ch.jpg" alt="Corner House">
+            <div>
+                <strong>Corner House</strong><br>
+                Popular ice cream and dessert chain in Bangalore, India, known for its chocolate sauce and Death By Chocolate: .<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Corner+House+-+Basavanagudi,+No.+10,+Kanakapura+Rd,+Kanakapura,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.943916,77.5666955,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15ec500ff8fb:0x8ce7faba9c75230e!2m2!1d77.5770103!2d12.9472378!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+<div class="restaurant">
+            <img src="re.jpg" alt="The Rogue Elephant">
+            <div>
+                <strong>The Rogue Elephant</strong><br>
+                Serving Mediterranean cuisine. Excellent choice of salads, veg cuisine and a large menu option.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/The+Rogue+Elephant,+93,+Kanakapura+Rd,+Mohammedan+Block,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.9405644,77.5668347,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15931002bc61:0xe64c1c5f7c43da4a!2m2!1d77.5772887!2d12.9417088!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+<div class="restaurant">
+            <img src="ps.jpg" alt="Protein Station">
+            <div>
+                <strong>Protein Station</strong><br>
+                Protein Station India offers a delectable range of healthy food options, including North Indian delicacies, mouthwatering sandwiches, refreshing shakes, and a variety of beverages. Indulge in a nutritious feast that will leave you feeling energized and satisfied. <br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Protein+Station,+No+32,+PCN+Plaza,+3rd+Main+Rd,+Srinivasanagara,+Hanumanthnagar,+Banashankari+1st+Stage,+Banashankari,+Bengaluru,+Karnataka+560019/@12.942614,77.5648271,18z/data=!3m2!4b1!5s0x3bae158db83e2bed:0x3d787e8f888cfc62!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae15799b634e2d:0x101f32b095df0bf3!2m2!1d77.5643559!2d12.9420236!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="restaurant">
+            <img src="ud.jpg" alt="Upahara Darshini">
+            <div>
+                <strong>Upahara Darshini</strong><br>
+                A restaurant in Bengaluru, India that serves a variety of food including South Indian, North Indian, Chinese, and fast food.<br>
+                <a href="https://www.google.com/maps/dir/BMS+College+of+Engineering,+Bull+Temple+Road,+Basavanagudi,+Bengaluru,+Karnataka/Upahara+Darshini,+DV+Gundappa+Rd,+Gandhi+Bazaar,+Basavanagudi,+Bengaluru,+Karnataka+560004/@12.9396872,77.566544,17z/data=!3m2!4b1!5s0x3bae158db83e2bed:0x3d787e8f888cfc62!4m14!4m13!1m5!1m1!1s0x3bae158b11e34d2f:0x5f4adbdbab8bd80f!2m2!1d77.5668099!2d12.9416151!1m5!1m1!1s0x3bae158c2c298c7d:0xc6661dc2cac7d018!2m2!1d77.5714068!2d12.9393131!3e0?entry=ttu&g_ep=EgoyMDI0MTExMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Google Maps</a>
+</div>
+        </div>
+</body>
