@@ -1,4 +1,14 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
+a {
+    color:black;
+    text-decoration:none;
+}
 
 #Header{
     background-color: #ebebeb;
@@ -16,11 +26,6 @@
 
     padding-left: 50px;
     display: inline-block;
-}
-
-#Header ul li a {
-    color:black;
-    text-decoration:none;
 }
 
 #HeaderImage{
@@ -49,7 +54,7 @@
     font-weight: bolder;
 }
 .box{
-    box-shadow: 5px 5px 10px gray, -5px -5px 10px gray;
+    box-shadow: 1px 1px 5px gray, -1px -1px 2px gray;
     width: 350px;
     height: 350px;
     max-width: 350px;
