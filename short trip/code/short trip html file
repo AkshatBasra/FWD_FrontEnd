@@ -94,7 +94,7 @@
     </header>
     <div class="container">
         <div class="place">
-            <img src="mysore_palace.jpg" alt="Mysore Palace">
+            <img src="mysore_palace.png" alt="Mysore Palace">
             <div>
                 <strong>Mysore Palace</strong><br>
                 The Mysore Palace, a magnificent royal residence, is known for its stunning architecture, rich history, and grandeur. It is one of India's most visited tourist attractions.<br>
@@ -102,7 +102,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="nandi_hills.jpg" alt="Nandi Hills">
+            <img src="nandi_hills.png" alt="Nandi Hills">
             <div>
                 <strong>Nandi Hills</strong><br>
                 Nandi Hills offers breathtaking views and is perfect for trekking, hiking, and nature walks. It is a popular destination for sunrise watchers.<br>
@@ -110,7 +110,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="wonderla.jpg" alt="Wonderla">
+            <img src="wonderla.png" alt="Wonderla">
             <div>
                 <strong>Wonderla</strong><br>
                 Wonderla is one of the biggest amusement parks in India, offering thrilling rides, water slides, and entertainment for all ages.<br>
@@ -118,7 +118,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="gudibande_fort.jpg" alt="Gudibande Fort">
+            <img src="gudibande_fort.png" alt="Gudibande Fort">
             <div>
                 <strong>Gudibande Fort</strong><br>
                 Situated on a hilltop, Gudibande Fort is an ancient fortress with spectacular views and a rich history, ideal for a hike or history enthusiasts.<br>
@@ -126,7 +126,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="tipu_sultan_summer_palace.jpg" alt="Tipu Sultan's Summer Palace">
+            <img src="tipu_sultan_summer_palace.png" alt="Tipu Sultan's Summer Palace">
             <div>
                 <strong>Tipu Sultan's Summer Palace</strong><br>
                 This historic palace, built by the ruler Tipu Sultan, showcases beautiful Indo-Islamic architecture and is a must-see for history buffs.<br>
@@ -134,7 +134,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="loco_bear.jpg" alt="Loco Bear">
+            <img src="loco_bear.png" alt="Loco Bear">
             <div>
                 <strong>Loco Bear</strong><br>
                 Loco Bear is an exciting amusement park for families with a wide variety of fun activities, including go-karting, bumper cars, and more.<br>
@@ -142,7 +142,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="bangalore_palace.jpg" alt="Bangalore Palace">
+            <img src="bangalore_palace.png" alt="Bangalore Palace">
             <div>
                 <strong>Bangalore Palace</strong><br>
                 A grand architectural masterpiece with beautiful interiors, this royal palace is known for its Tudor-style design and historical significance.<br>
@@ -150,7 +150,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="hal_museum.jpg" alt="HAL Museum">
+            <img src="hal_museum.png" alt="HAL Museum">
             <div>
                 <strong>HAL Museum</strong><br>
                 The HAL Museum offers a fascinating look into the history of aviation in India, showcasing aircraft models, history, and technological innovations.<br>
@@ -158,7 +158,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="microflight_jakkur.jpg" alt="Microflight Flying Jakkur">
+            <img src="microflight_jakkur.png" alt="Microflight Flying Jakkur">
             <div>
                 <strong>Microflight Flying Jakkur</strong><br>
                 For aviation enthusiasts, Microflight Flying Jakkur offers an opportunity to experience microlight flying over Bangalore, providing a unique view of the city.<br>
@@ -166,7 +166,7 @@
             </div>
         </div>
         <div class="place">
-            <img src="anthargange_trek.jpg" alt="Anthargange Trek">
+            <img src="anthargange_trek.png" alt="Anthargange Trek">
             <div>
                 <strong>Anthargange Trek</strong><br>
                 This trek is popular for its scenic beauty, caves, and rock formations. It’s a perfect adventure spot for nature lovers and trekking enthusiasts.<br>
