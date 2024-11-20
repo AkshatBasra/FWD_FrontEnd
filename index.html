@@ -4,16 +4,148 @@
     <meta charset="UTF-8">
     <title>TravOn</title>
     <link rel="stylesheet" href="sample.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Header Styling */
+        #Header {
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        #Header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #Header ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        #Header ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #Header ul li a:hover {
+            color: #f4a261;
+        }
+
+        /* Sign Up and Login Button Styling */
+        #Header .auth-buttons {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+
+        #Header .auth-buttons button {
+            background-color: #f4a261;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #Header .auth-buttons button:hover {
+            background-color: #e76f51;
+        }
+
+        /* Header Image Styling */
+        #HeaderImage {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Marquee and Title Text */
+        #TitleText {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            padding-top: 20px;
+        }
+
+        #TitleText marquee {
+            font-size: 30px;
+            color: #f4a261;
+        }
+
+        /* Grid Layout for the Boxes */
+        .grid {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .box h2 {
+            margin-top: 15px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        .box p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .title {
+            color: #333;
+        }
+    </style>
 </head>
 <body>
     <div id="Header">
         <ul>
-            <li style="float: left;">TravOn</li>
+            <li style="float: left; font-size: 24px; font-weight: bold;">TravOn</li>
             <li><a href="news.asp">News</a></li>
             <li><a href="contact.asp">Contact</a></li>
             <li><a href="about.asp">About</a></li>
         </ul>
+        <div class="auth-buttons">
+            <button onclick="window.location.href='signup.asp'">Sign Up</button>
+            <button onclick="window.location.href='login.asp'">Login</button>
+        </div>
     </div>
+
     <div>
         <img id="HeaderImage" src="image%203.png" alt="Header Pic"/>
         <p id="TitleText">
@@ -24,42 +156,28 @@
             </marquee>
         </p>
     </div>
-    <table class="grid"><tr>
-        <td>
-        <div class = "box">
-            <img src="image 7.png" height="169" width="294" alt="Long Trip Pic"/>
-            <p class = "title"><h2>
-                LONG TRIP?
-            </h2></p>
-            <p>
-                Fun things to do within 10 km
-            </p>
+
+    <div class="grid">
+        <div class="box">
+            <img src="image%207.png" height="169" width="294" alt="Long Trip Pic"/>
+            <p class="title"><h2>LONG TRIP?</h2></p>
+            <p>Fun things to do within 10 km</p>
         </div>
-        </td>
-        <td>
-        <a href="Restaurants.html">
-        <div class = "box" >
-            <img src="image 6.png" height="181" width="207" alt="Restaurants Pic"/>
-            <p class = "title"><h2>
-                HUNGRY?
-            </h2></p>
-            <p>
-                Best places to grab something for lunch within 3 km
-            </p>
-        </a>
+
+        <div class="box">
+            <a href="Restaurants.html">
+                <img src="image%206.png" height="181" width="207" alt="Restaurants Pic"/>
+                <p class="title"><h2>HUNGRY?</h2></p>
+                <p>Best places to grab something for lunch within 3 km</p>
+            </a>
         </div>
-        </td>
-        <td>
-        <div class = "box">
+
+        <div class="box">
             <img src="image%205.png" height="169" width="293" alt="Day Out Pic"/>
-            <p class = "title"><h2>
-                DAY OUT?
-            </h2></p>
-            <p>
-                Places to visit during a long weekend
-            </p>
+            <p class="title"><h2>DAY OUT?</h2></p>
+            <p>Places to visit during a long weekend</p>
         </div>
-        </td>
-    </tr></table>
+    </div>
+
 </body>
 </html>
