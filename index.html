@@ -15,10 +15,13 @@
 
         /* Header Styling */
         #Header {
+            height: 35px;
             background-color: #333;
             color: white;
-            padding: 15px 0;
+            padding-bottom: 15px;
+            padding-top: 15px;
             text-align: center;
+            float: left;
         }
 
         #Header ul {
@@ -30,6 +33,8 @@
         #Header ul li {
             display: inline;
             margin: 0 15px;
+            float: left;
+            padding-right: 1356px;
         }
 
         #Header ul li a {
@@ -64,20 +69,19 @@
             background-color: #e76f51;
         }
 
-        /* Header Image Styling */
         #HeaderImage {
             width: 100%;
             height: 400px;
             object-fit: cover;
         }
 
-        /* Marquee and Title Text */
         #TitleText {
             text-align: center;
             font-size: 24px;
             font-weight: bold;
             color: #333;
             padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         #TitleText marquee {
@@ -85,7 +89,6 @@
             color: #f4a261;
         }
 
-        /* Grid Layout for the Boxes */
         .grid {
             width: 90%;
             margin: 30px auto;
@@ -112,7 +115,7 @@
         }
 
         .box img {
-            width: 100%;
+            width: 80%;
             border-radius: 10px;
         }
 
@@ -133,51 +136,52 @@
     </style>
 </head>
 <body>
-    <div id="Header">
-        <ul>
-            <li style="float: left; font-size: 24px; font-weight: bold;">TravOn</li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
-        </ul>
-        <div class="auth-buttons">
-            <button onclick="window.location.href='signup.asp'">Sign Up</button>
-            <button onclick="window.location.href='login.asp'">Login</button>
-        </div>
+<div id="Header">
+    <ul>
+        <li style="float: left; font-size: 24px; font-weight: bold;">TravOn</li>
+    </ul>
+    <div class="auth-buttons">
+        <button onclick="window.location.href='signup.html'">Sign Up</button>
+        <button onclick="window.location.href='signin.html'">Login</button>
     </div>
+</div>
 
-    <div>
-        <img id="HeaderImage" src="image%203.png" alt="Header Pic"/>
-        <p id="TitleText">
-            <marquee>
-                <b><h1>Journey Beyond Knowledge</h1></b><br>
-                Wanna let loose after classes ?<br>
-                Don’t worry, we got you.
-            </marquee>
-        </p>
-    </div>
+<div>
+    <img id="HeaderImage" src="./Pics/image%203.png" alt="Header Pic"/>
+    <p id="TitleText">
+        <marquee>
+            <h1>Journey Beyond Knowledge</h1><br>
+            Wanna let loose after classes ?<br>
+            Don’t worry, we got you.
+        </marquee>
+    </p>
+</div>
 
     <div class="grid">
-        <div class="box">
-            <img src="image%207.png" height="169" width="294" alt="Long Trip Pic"/>
-            <p class="title"><h2>LONG TRIP?</h2></p>
-            <p>Fun things to do within 10 km</p>
-        </div>
+        <a href="longtrip.html">
+            <div class="box">
+                <img src="./Pics/image%207.png" height="169" width="294" alt="Long Trip Pic"/>
+                <p class="title"><h2>LONG TRIP?</h2>
+                <p>Fun things to do within 10 km</p>
+            </div>
+        </a>
 
         <div class="box">
-            <a href="Restaurants.html">
-                <img src="image%206.png" height="181" width="207" alt="Restaurants Pic"/>
-                <p class="title"><h2>HUNGRY?</h2></p>
+            <a href="Food.html">
+                <img src="./Pics/image%206.png" height="181" width="207" alt="Restaurants Pic"/>
+                <p class="title"><h2>HUNGRY?</h2>
                 <p>Best places to grab something for lunch within 3 km</p>
             </a>
         </div>
 
         <div class="box">
-            <img src="image%205.png" height="169" width="293" alt="Day Out Pic"/>
-            <p class="title"><h2>DAY OUT?</h2></p>
-            <p>Places to visit during a long weekend</p>
+            <a href="shorttrip.html">
+                <img src="./Pics/image%205.png" height="169" width="293" alt="Day Out Pic"/>
+                <p class="title"><h2>DAY OUT?</h2>
+                <p>Places to visit during a long weekend</p>
+            </a>
         </div>
-    </div>
+</div>
 
 </body>
 </html>
