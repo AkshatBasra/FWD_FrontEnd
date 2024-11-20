@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #ffecd2, #fcb69f); /* Gradient background */
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+        @keyframes backgroundAnimation {
+            0% { background: linear-gradient(to right, #ffecd2, #fcb69f); }
+            100% { background: linear-gradient(to right, #fcb69f, #ffecd2); }
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #87CEFA;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #FF5733;
+            position: relative;
+        }
+        header h2 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #FF5733; /* Different color for the header text */
+            animation: textAnimation 5s infinite alternate;
+        }
+        @keyframes textAnimation {
+            0% { color: #FF5733; }
+            100% { color: #87CEFA; }
+        }
+        .moving-text {
+            position: absolute;
+            width: 100%;
+            bottom: -20px;
+            left: 0;
+            text-align: center;
+            font-size: 1.2em;
+            color: #FF5733;
+            animation: moveText 10s linear infinite;
+        }
+        @keyframes moveText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+        .place {
+            background: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+            margin: 10px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, background-color 0.2s;
+            display: flex;
+            align-items: center;
+        }
+        .place img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .place:hover {
+            transform: scale(1.05);
+            background-color: #ffebcd; /* Light golden background on hover */
+        }
+        .place div {
+            color: #333; /* Text color */
+        }
+        .place a {
+            color: #FF5733; /* Link color */
+            text-decoration: none;
+        }
+        .place a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h2>Top Short Trip Places in Bangalore</h2>
+        </div>
+    </header>
+    <div class="container">
+        <div class="place">
+            <img src="banasura_hill_resort.png" alt="Banasura Hill Resort">
+            <div>
+                <strong>Banasura Hill Resort</strong><br>
+                A peaceful retreat in nature, perfect for a quick getaway. Located near a scenic hill and surrounded by lush greenery.<br>
+                <a href="https://maps.app.goo.gl/9d6gYZ8GsdpjCEht7" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="channarayana_durg_fort.png" alt="Channarayana Durg Fort">
+            <div>
+                <strong>Channarayana Durg Fort</strong><br>
+                This historic fort offers a short trek to the top, with a beautiful view of the surrounding area. A great spot for history and nature lovers.<br>
+                <a href="https://maps.app.goo.gl/vSeiE4WgPMnM8NB48" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="savage_gardens.png" alt="Savage Gardens">
+            <div>
+                <strong>Savage Gardens</strong><br>
+                A wonderful nature escape with beautiful gardens and scenic surroundings, perfect for a short trip.<br>
+                <a href="https://maps.app.goo.gl/9b8QijhdVNC4FFNYA" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="srinivasa_sagara.png" alt="Srinivasa Sagara">
+            <div>
+                <strong>Srinivasa Sagara</strong><br>
+                A serene and quiet water reservoir located near Bangalore, perfect for a weekend picnic and escape from the city buzz.<br>
+                <a href="https://maps.app.goo.gl/aybxq6Q7d8Fjf6w57" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="ankalamma_temple.png" alt="Ankalamma Temple">
+            <div>
+                <strong>Ankalamma Temple</strong><br>
+                This temple is located on a small hill, offering a peaceful atmosphere and a great view of the surrounding area.<br>
+                <a href="https://maps.app.goo.gl/hhCzkad8byD72RTH7" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="devarayanadurga.png" alt="Devarayanadurga">
+            <div>
+                <strong>Devarayanadurga</strong><br>
+                A beautiful hill station offering trekking routes, scenic beauty, and a historical temple at the top.<br>
+                <a href="https://maps.app.goo.gl/7QFJic2akpyHuyJe9" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="nandi_hills.png" alt="Nandi Hills">
+            <div>
+                <strong>Nandi Hills</strong><br>
+                Nandi Hills offers breathtaking views and is perfect for trekking, hiking, and nature walks. It is a popular destination for sunrise watchers.<br>
+                <a href="https://maps.app.goo.gl/FSsZT7JPXJ7s1boQ8" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="kanakapura.png" alt="Kanakapura">
+            <div>
+                <strong>Kanakapura</strong><br>
+                A picturesque location known for its lakes and temples, ideal for a peaceful short trip surrounded by nature.<br>
+                <a href="https://maps.app.goo.gl/3FuHEZzG6wKFYqXg8" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="bhoga_nandeeshwara.png" alt="Bhoga Nandeeshwara Temple">
+            <div>
+                <strong>Bhoga Nandeeshwara Temple</strong><br>
+                A historical temple located near Nandi Hills, perfect for a peaceful retreat and an experience of spiritual serenity.<br>
+                <a href="https://maps.app.goo.gl/ZbMnNyzmZVvYp3VE6" target="_blank">Google Maps</a>
+            </div>
+        </div>
+        <div class="place">
+            <img src="shivagange.png" alt="Shivagange">
+            <div>
+                <strong>Shivagange</strong><br>
+                A popular trekking destination offering a combination of natural beauty, temples, and adventure, located just outside of Bangalore.<br>
+                <a href="https://maps.app.goo.gl/va2ygpejBdCK5tkF7" target="_blank">Google Maps</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
