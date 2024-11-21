@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TravOn</title>
+    <link rel="stylesheet" href="sample.css">
+    <style>
+        @font-face {
+            font-family: "Ragitta";
+            src: url("Ragitta-BWVgl.otf") format("truetype");
+        }
+        body {
+            font-family: Ragitta, sans-serif;
+            margin: 0;
+            padding: 0;
+            /*background-image: url("cola.jpeg.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;*/
+        }
+
+        #Header {
+            height: 35px;
+            background-color: #000000;
+            color: white;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            text-align: center;
+            float: left;
+        }
+
+        #Header ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #Header ul li {
+            display: inline;
+            margin: 0 15px;
+            float: left;
+            padding-right: 1439px;
+        }
+
+        #Header ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        #Header ul li a:hover {
+            color: #f4a261;
+        }
+
+        #Header .auth-buttons {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+        }
+
+        #Header .auth-buttons button {
+            background-color: #f4a261;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #Header .auth-buttons button:hover {
+            background-color: #e76f51;
+        }
+
+        #HeaderImage {
+            width: 100%;
+            /*height: 400px;*/
+            object-fit: cover;
+            position: relative;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            text-align: center;
+            font-style: italic;
+            color: white;
+        }
+
+        #TitleText {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        #TitleText marquee {
+            font-size: 30px;
+            color: #f4a261;
+        }
+
+        .grid {
+            width: 90%;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 420px;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            width: 80%;
+            border-radius: 10px;
+        }
+
+        .box h2 {
+            margin-top: 15px;
+            color: #333;
+            font-size: 22px;
+        }
+
+        .box p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .title {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div id="Header">
+    <ul>
+      <div id="Header">
+    <ul>
+        <li style="float: left; font-size: 24px; font-weight: bold;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-backpack2" viewBox="0 0 16 16">
+                <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14"/>
+                <path fill-rule="evenodd" d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.5 2.5 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z"/>
+            </svg>
+        </li>
+    </ul>
+    <div class="auth-buttons">
+        <button onclick="window.location.href='signup.html'">Sign Up</button>
+        <button onclick="window.location.href='login.html'">Login</button>
+    </div>
+</div>
+
+        <li style="float: left; font-size: 24px; font-weight: bold;"></li>
+    </ul>
+    <div class="auth-buttons">
+        <button onclick="window.location.href='signup.html'">Sign Up</button>
+        <button onclick="window.location.href='login.html'">Login</button>
+    </div>
+</div>
+
+<div>
+    <img id="HeaderImage" src="Pics/cola.jpeg.jpg" alt="Header Pic"/>
+    <div class="centered">TravOn</div>
+    <p id="TitleText">
+        <marquee>
+            <h1>Journey Beyond Knowledge</h1><br>
+            Wanna let loose after classes ?
+            Don’t worry, we got you.
+        </marquee>
+    </p>
+</div>
+
+    <div class="grid">
+        <a href="longtrip.html">
+            <div class="box">
+                <img src="./Pics/image%207.png" height="169" width="294" alt="Long Trip Pic"/>
+                <p class="title"><h2>LONG TRIP?</h2>
+                <p>Fun things to do within 10 km</p>
+            </div>
+        </a>
+
+        <div class="box">
+            <a href="Food.html">
+                <img src="./Pics/image%206.png" height="181" width="207" alt="Restaurants Pic"/>
+                <p class="title"><h2>HUNGRY?</h2>
+                <p>Best places to grab something for lunch within 3 km</p>
+            </a>
+        </div>
+
+        <div class="box">
+            <a href="shorttrip.html">
+                <img src="./Pics/image%205.png" height="169" width="293" alt="Day Out Pic"/>
+                <p class="title"><h2>DAY OUT?</h2>
+                <p>Places to visit during a long weekend</p>
+            </a>
+        </div>
+</div>
+
+</body>
+</html>
