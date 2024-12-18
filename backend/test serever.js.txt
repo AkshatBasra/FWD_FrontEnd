@@ -1,0 +1,58 @@
+const express = require('express');
+const app = express();
+const path = require('path');
+const mongoose = require('mongoose');
+const port = process.env.PORT || 3000;
+
+// Middleware to parse JSON and URL-encoded data
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+app.use(express.static(path.join(__dirname)));
+
+mongoose.connect('mongodb+srv://Akshat:1BM23CS020@cluster0.bmfpm.mongodb.net/Signin', {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+});
+const db = mongoose.connection;
+db.once('open', () => {
+    console.log('Connected to Database');
+});
+
+const userSchema = new mongoose.Schema({
+    username: { type: String, required: true, unique: true },
+    password: { type: String, required: true }
+});
+
+const User = mongoose.model('User ', userSchema); // Corrected model name
+
+app.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.get('/signup', function (req, res) {
+    res.sendFile(path.join(__dirname, 'signup.html')); // Added __dirname for correct path
+});
+
+app.post('/signup', async function (req, res) {
+    const { username, password } = req.body; // Destructure username and password from request body
+
+    const newUser  = new User({ username, password });
+
+    try {
+        // Save the user to the database
+        await newUser .save();
+        res.status(201).send('User  created successfully');
+    } catch (error) {
+        // Handle errors (e.g., duplicate username)
+        if (error.code === 11000) {
+            res.status(400).send('Username already exists');
+        } else {
+            res.status(500).send('Error creating user');
+        }
+    }
+});
+
+const server = app.listen(port, () => {
+    console.log(`Server listening on port ${port}`);
+});
